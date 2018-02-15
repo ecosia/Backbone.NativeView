@@ -1,6 +1,5 @@
 (function() {
   module("Backbone.NativeView");
-  Backbone.View = Backbone.NativeView;
 
   test("constructor", 3, function() {
     var view = new Backbone.View({
