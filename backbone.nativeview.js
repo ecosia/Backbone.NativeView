@@ -1,4 +1,4 @@
-// Backbone.NativeView.js 0.3.3
+// Backbone.NativeView.js
 // ---------------
 
 //     (c) 2015 Adam Krebs, Jimmy Yuen Ho Wong
@@ -24,7 +24,7 @@ module.exports = {
   _domEvents: [],
 
   $: function(selector) {
-    return this.el.querySelectorAll(selector);
+    return Array.prototype.slice.call(this.el.querySelectorAll(selector));
   },
 
   _removeElement: function() {
